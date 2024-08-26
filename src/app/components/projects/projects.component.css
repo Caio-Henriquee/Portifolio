@@ -1,0 +1,17 @@
+.cards {
+    width: 100%;
+    max-width: 350px;
+    height: 200px;
+}
+
+@media (max-width: 1024px) {
+    .cards {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        max-width: 100%;
+    }
+}

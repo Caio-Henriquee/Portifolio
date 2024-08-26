@@ -1,0 +1,14 @@
+.photo-container{
+
+    background-color: #0f79ba;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.decoration{
+    background-color: #0f79ba;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
