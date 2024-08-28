@@ -3,20 +3,13 @@
     <div class="text-white flex flex-col justify-center items-center text-center space-y-4 mb-8">
       <h2 class="text-4xl font-bold">Apresentação</h2>
       <p class="text-lg sm:text-xl md:text-2xl max-w-3xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellat enim consequatur nobis aliquid odio blanditiis quidem provident nesciunt. Reiciendis nisi ducimus atque sapiente aut labore a asperiores quae sed nobis aliquam dolore exercitationem voluptatem, architecto laborum, tempore ut tenetur incidunt corrupti debitis? Possimus maxime neque illum! Animi, quod velit.
-      </p>
+        Olá, meu nome é Caio Henrique. Sou estudante de Ciências da Computação na Universidade Fumec, atualmente no quinto período. Concentro meus estudos fora da faculdade no desenvolvimento web, usando Angular no front-end e, atualmente, iniciei o aprendizado de Spring Boot para desenvolver o back-end das minhas aplicações.      </p>
     </div>
     
     <div class="w-full text-white flex flex-col items-center text-center space-y-4">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
-        <div class="card">
-          <app-card-apresetation></app-card-apresetation>
-        </div>
-        <div class="card" id="card-center">
-          <app-card-apresetation></app-card-apresetation>
-        </div>
-        <div class="card">
-          <app-card-apresetation></app-card-apresetation>
+        <div class="card" *ngFor="let card of cards, let i = index" [ngClass]="{'card-par': ePar(i), 'card-impar': !ePar(i)}">
+          <app-card-apresetation [card]="card"></app-card-apresetation>
         </div> 
       </div>
     </div>

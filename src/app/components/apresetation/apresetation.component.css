@@ -1,6 +1,6 @@
 .card {
-    background-color: #0f79ba;
-    height: 252px;
+
+    height: 235x;
     width: 100%;
     max-width: 250px;
     border-radius: 5px;
@@ -8,6 +8,13 @@
 
 #card-center {
     height: 252px;
+    background-color: transparent;
+}
+
+.card-par{
+    background-color: #0f79ba;
+}
+.card-impar{
     background-color: transparent;
 }
 
