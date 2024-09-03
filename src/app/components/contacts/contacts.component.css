@@ -1,7 +1,18 @@
-.photo-container{
-
+.photo-container {
     background-color: #0f79ba;
     height: 200px;
     width: 200px;
     border-radius: 50%;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+
+.photo-container img {
+  
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
